@@ -8,7 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # bisa juga pakai ["*"] untuk semua origin (tidak disarankan untuk production)
+    allow_origins=["*"],  # bisa juga pakai ["*"] untuk semua origin (tidak disarankan untuk production)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
